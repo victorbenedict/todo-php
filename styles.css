@@ -1,0 +1,97 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+h1 {
+  margin-bottom: 2.25rem;
+  font-weight: 900;
+  line-height: 2.25rem;
+}
+
+.inputField {
+  margin-bottom: 1.25rem;
+}
+
+.inputField > div {
+  display: flex;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.inputField > div > input {
+  flex: 1;
+}
+
+.inputField > div > button {
+  display: inline-block;
+}
+
+.greenCheck {
+  width: 0.875rem;
+  height: 0.875rem;
+  margin-right: 0.5rem;
+  color: #10b981;
+  flex-shrink: 0;
+}
+
+body.dark .greenCheck {
+  color: #4ade80;
+}
+
+.grayCheck {
+  width: 0.875rem;
+  height: 0.875rem;
+  margin-inline-end: 0.5rem;
+  color: rgb(107, 114, 128);
+  flex-shrink: 0;
+}
+
+.grayCheck.dark {
+  color: rgb(156, 163, 175);
+}
+
+ul {
+  padding: 0;
+}
+
+/* li {
+  cursor: pointer;
+} */
+
+#todo-list svg {
+  cursor: pointer;
+}
+
+#todo-list li {
+  display: flex;
+  padding: 0.5rem 0.875rem 0.5rem 0.875rem;
+  border-radius: 0.25rem;
+}
+
+#todo-list li:hover {
+  background-color: #f3f4f6;
+}
+
+#todo-list span {
+  flex: 1;
+}
+
+.optionPanel {
+  display: flex;
+  gap: 1.5rem;
+  visibility: hidden;
+}
+
+.optionPanel div {
+  cursor: pointer;
+}
